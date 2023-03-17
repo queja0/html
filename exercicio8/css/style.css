@@ -1,0 +1,105 @@
+*{
+   box-sizing: border-box;
+}
+
+/*Estilo do body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+
+}
+.anotacao {
+    background-color: rgb(141, 155, 225);
+    padding: 5px;
+    text-align: center;
+}
+.cabecalho{
+    padding: 60px;
+    text-align: center;
+    background-image: url(../imagem/computador.png);
+background-size: cover;
+color: rgba(251, 253, 255, 0.769);
+
+}
+.barra_nav{
+    display:flex;
+    background-color: rgb(68, 66, 66);
+}
+
+/*Estilo dos links da barra de navegação*/
+.barra_nav a{
+    color: aliceblue;
+    padding: 14px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*trocar a cor de fundo quando o cursor passar sobre o link*/
+.barra_nav a:hover{
+    background-color: rgb(122, 146, 171);
+    color: #720808;
+}
+/*configurar a div da coluna*/
+.coluna{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Criar 2 colunas desiguais (30 e 70%)*/
+.lateral{
+    flex: 30%;
+    background-color: rgb(253, 253, 255);
+    padding: 20px;
+}
+
+.principal{
+    flex: 70%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+/*imagens falsas apenas para marcação de espaço*/
+.imagem_falsa{
+    background-color: rgb(216, 227, 237);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+.imagem_falsa2{
+    background-color: rgb(217, 227, 236);
+    width: 100%;
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+.imagem_falsa3{
+    background-color: rgb(216, 224, 231);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+.imagem_falsa4{
+    background-color: rgb(213, 225, 235);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+.rodape{
+    max-height: fit-content;
+    padding: 5px;
+    text-align: center;
+    background-color: #8fa4e4;
+}
+
+
+@media screen and (max-width:500px) 
+{
+    .coluna, .barra_nav{
+        flex-direction: column;
+    }
+.cabecalho{
+    background-image: url(../imagem/celular.png);
+    background-size: cover;
+    color: #ffffff;
+}
+    
+}
