@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utF-9"/>
+<title> Animações brasileias  </title>
+<meta name="description" content="Bem vindos ao site com html5, 
+css3 e jquery e design responsivo"/>
+
+<meta name="viewport" content="width-device-width, initial-scale=1"/>
+<link rel="shortcut icon" type="image/x-icon" href="icone_mania.png" />
+
+<link rel="author" type="text/plain" href="humans.txt" />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+<link rel="stylesheet" href="css/estilo.css" />
+<link rel="stylesheet" href="css/flexslider.css" />
+<link rel="stylesheet" href="css/fancybox.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	
+<!--Script para plugin FancyBox -->
+<script>
+		!window.jQuery && document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script>
+		$(document).on("ready",function(){
+			//fancybox
+			$("a[rel=trabalhos]").fancybox({
+				"transitionIn":"fade",
+				"transitionOut":"elastic",
+				"titlePosition":"over",
+				"titleFormat":function(title, currentArray, currentIndex, currentOpts){
+					return "<span id='fancybox-title-over'>Trabaho "+(currentIndex+1)+" de "+currentArray.length +(title.length?" &nbsp; "+title:"")+"</span>";
+				}
+			});
+			$(".fade").fancybox();
+		});
+	</script>	
+	
+</head>
+<body>
+
+<header>
+<h1> <a href="index.html"> <img class="fade" alt=""
+src="img/logobrasil.png" /> </a> </h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Início</a></li>
+<li><a href="cursos.html">Anos 90</a></li>
+<li><a href="servicos.html">Anos 2000</a></li>
+<li><a href="trabalhos.html">Animações brasileiras</a></li>
+<li><a href="contatos.html">Fale Conosco!</a></li>
+</nav>
+</header>
+
+<section id="conteudo">
+		<section id="trabalhos">
+			<h2>Animações brasileiras!</h2>
+				<div class="portifolio">
+					<article>
+						<a rel="trabalhos" class="fade" href="img/slide/castelo.png"
+						title="O castelo Ra-tim-bum">
+							<img src="img/slide/castelo.png">
+						</a>
+					</article>
+					<article>
+						<a rel="trabalhos" class="fade" href="img/slide/jorel.png"
+						title="Irmão do Jorel">
+							<img src="img/slide/jorel.png">
+						</a>
+					</article>
+					<article>
+						<a rel="trabalhos" class="fade" href="img/slide/luna.png"
+						title="O Show da Luna">
+							<img src="img/slide/luna.png">
+						</a>
+					</article>
+					<article>
+						<a rel="trabalhos" class="fade" href="img/slide/sereias.png"
+						title="">
+							<img src="img/slide/sereias.png">
+						</a>
+					</article>
+					<article>
+						<a rel="trabalhos" class="fade" href="img/slide/peixonauta.png"
+						title="Peixonauta">
+							<img src="img/slide/peixonauta.png">
+						</a>
+					</article>
+					
+				</div>
+		</section>
+		
+</section>
+
+<footer>
+Jaqueline Magalhães de OLiveira</a>
+
+
+</body>
+</html>
